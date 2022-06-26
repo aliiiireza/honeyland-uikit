@@ -1,23 +1,23 @@
 {
-  "name": "react-npm-package-boilerplate",
-  "version": "1.0.1",
-  "description": "react,react native and jsx npm package generator with typescript",
+  "name": "honeyland-uikit",
+  "version": "0.1.5",
+  "description": "ui kit of honeyland project",
   "scripts": {
-    "ts-build": "rm -rf ./dist/** && tsc",
-    "babel-build": "rm -rf ./dist/** && babel ./src --out-dir dist --extensions '.ts,.tsx'",
+    "ts-build": "rmdir /s dist && yarn tsc",
+    "babel-build": "rmdir /s dist && yarn babel ./src --out-dir dist --extensions '.ts,.tsx'",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
-    "watch": "tsc -- --watch",
+    "watch": "yarn tsc -- --watch",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pankod/react-typescript-npm-package-boilerplate"
+    "url": "https://github.com/aliiiireza/honeyland-uikit"
   },
   "bugs": {
-    "url": "https://github.com/pankod/react-typescript-npm-package-boilerplate/issues"
+    "url": "https://github.com/aliiiireza/honeyland-uikit/issues"
   },
-  "homepage": "https://github.com/pankod/react-typescript-npm-package-boilerplate",
+  "homepage": "https://github.com/aliiiireza/honeyland-uikit",
   "files": [
     "dist"
   ],
@@ -25,25 +25,20 @@
   "main": "dist/index.js",
   "keywords": [
     "react",
-    "react-native",
-    "npm",
-    "typescript",
-    "npm package",
-    "generator",
-    "babel",
-    "react-dom"
+    "honeyland",
+    "uikit"
   ],
-  "author": "Pankod Inc.",
+  "author": "Honeyland",
   "contributors": [
     {
-      "name": "selcuksarikoz",
-      "email": "selcuk@pankod.com"
+      "name": "alrz",
+      "email": "mra.abdollahi@gmail.com"
     }
   ],
   "license": "MIT",
   "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -53,9 +48,9 @@
     "@babel/plugin-transform-typescript": "^7.3.2",
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "@types/jest": "^24.0.9",
-    "@types/react": "^16.8.5",
-    "@types/react-dom": "^16.8.2",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.10.0",
     "jest": "^24.1.0",

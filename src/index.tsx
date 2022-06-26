@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// import React from "react";
+// import ReactDOM from "react-dom";
 
-import App from './App';
+// import App from "./App";
+import Button from "./App/Components/Button";
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export { Button };
+
+// export default App;
+// ReactDOM.render(<App />, document.getElementById("root"));

@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
-import { IButtonProps } from '../../Interfaces/IButtonProps';
+import React from "react";
 
-class Button extends Component<IButtonProps, {}> {
-  private handleClick = (): void => {
-    this.props.onClickFunction(this.props.incrementValue);
-  }
-
-  public render(): JSX.Element {
-    return (
-      <button onClick={this.handleClick}>
-        +{this.props.incrementValue}
-      </button>
-    );
-  }
-}
+const Button = ({ children }: { children?: JSX.Element | string }) => {
+  return (
+    <button
+      className="wallet-adapter-button wallet-adapter-button-trigger"
+      type="button"
+    >
+      {children}
+    </button>
+  );
+};
 
 export default Button;
